@@ -14,7 +14,7 @@ books/
 cpsc410/
 __MACOSX/
 otherCourses/
-projects/
+#projects/
 tests/
 C_intro_files/
 examples/
