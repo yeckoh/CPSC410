@@ -19,6 +19,7 @@ tests/
 C_intro_files/
 examples/
 lectures/
+content/reference/
                                  
  # Libraries
 *.lib
