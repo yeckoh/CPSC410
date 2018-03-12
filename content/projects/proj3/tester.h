@@ -7,6 +7,7 @@
 
 #ifndef TESTER_H_
 #define TESTER_H_
+#include <string>
 
 enum WHICH_PRINT{P1,P2,P3,P4,P5};
 const std::string USER_CHOSE_TO_CANCEL = "User Chose To Cancel";
