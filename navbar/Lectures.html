@@ -144,12 +144,16 @@
 				
 		    </td>
 			<td class="style_white ">
+			
 
 			<strong><a href="https://github.com/CNUClasses/410_start_threads_using_condition_var.git.git">Making all threads start at the same time using Condition Variables</a></strong> Also demonstrates the efficiency difference between condition variables and busy waiting on a global value (spinning)<br/>
 
 			<strong><a href="https://github.com/CNUClasses/410_ConditionVar_Mutex.git">Simple signaling between threads using a mutex a condition variable and a lock guard</a></strong><br/> 
-			<strong><a href="https://github.com/CNUClasses/410_Producer_many_consumers.git"> Producer consumer problem using mutex and condition variables</a></strong> Multiple consumers a single producer <br />
-			<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chapter5_producer_many_consumers_flowchart.pdf"> producer many consumers flowchart from whiteboard</a></strong> <br>
+			<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer.git"> Simple producer consumer problem. Producer signals consumer.</a></strong>Producer produces as fast as it can and notifies consumer, consumer consumes as fast as it can. Demoes effecient 1 way thread communication. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. <br>
+			<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer_Back_And_Forth.git">Complex producer consumer problem, Producer signals consumer and vice versa</a></strong>Producer produces one then notifies consumer, consumer consumes one then notifies producer. Demoes effecient 2 way thread communications. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. <br>
+
+			<!--<strong><a href="https://github.com/CNUClasses/410_Producer_many_consumers.git"> Producer consumer problem using mutex and condition variables</a></strong> Multiple consumers a single producer <br />
+			<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chapter5_producer_many_consumers_flowchart.pdf"> producer many consumers flowchart from whiteboard</a></strong> <br>-->
 
 			<strong><a href="https://github.com/CNUClasses/410_Semaphore_ConditionVar_Mutex_Thread_Producer_Consumer.git"> Single Producer, single consumer solution using semaphores</a></strong> Semaphore example<br />
 			<strong><a href="https://github.com/CNUClasses/410_Producer_wait_for_all_consumers_ready_using_Semaphore.git"> Forcing a thread to wait until all other threads signal that they are ready using semaphores</a></strong> Semaphores for cordination example<br />
