@@ -142,7 +142,7 @@
 			add -pthread to the 'Other Dialect Flags' below above 'Language Standard' dropdown then in the GCC C++ Linker Libraries, add the pthread library to the libraries-l text box on the right <br><br>
 			
 			<strong><a href="https://github.com/CNUClasses/8_Deadlock.git.git"> Deadlock example</a></strong> Rule of thumb: If you are using 2 or more synchronization objects, then you should always aquire them in the same order.  If you break this rule and some threads aquire in different order then your code is prone to deadlock.<br /> 
-			<strong><a href="https://github.com/CNUClasses/mutex_thread.git"> Mutexes to synchronize threads</a></strong> Using a mutex to synchronize critical sections (as in multiple lines of code).  Also instructions for configuring GCC via Eclipse UI to use threads <br />
+			<strong><a href="https://github.com/CNUClasses/mutex_thread.git"> Mutexes to synchronize threads</a></strong> Using a mutex to synchronize critical sections (as in multiple lines of code).  <br />
 			<strong><a href="https://github.com/CNUClasses/mutex_lock_guard_sleep_for_yield.git">mutex_lock_guard_sleep_for_yield    </a></strong> Using a lock_guard to autounlock a mutex once the guard goes out of scope.  Also how to yield a threads timeslice or sleep the amount of time defined by std::chrono..<br />	
 			<strong><a href="https://github.com/CNUClasses/410_recursive_mutex.git">Recursive_mutex    </a></strong> A locking object that can be recursively locked (as long as you have 1 unlock() for every lock()).  This added functionality typically makes it harder to keep track of locked regions when designing your application. <br />	
 			
