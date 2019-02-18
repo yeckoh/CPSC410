@@ -106,12 +106,14 @@
 		</tr>
 	
 		<tr>
-			<td class="style_white "><em>6</em></td>
+			<td class="style_white "><em>6,7</em></td>
 			<td class="style_white ">
 			
 				<strong>Please read Chapter 5 in your text</strong><br>
 				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chap_5_part_1.pdf"> chapter 5 part1 notes</a></strong> Multithreading intro<br>
 				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/410_chap5_race_condition_critical_section.pdf"> Chapter 5 part 2, notes- race condtion and critical section examples</a></strong>  <br>
+				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chapter_5_opencv_camera_bridge_view_HARD_race_condition_find_it.pdf"> A real world example race condition and critical section that is difficult to see</a></strong>  <br>
+				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chapter_5_handwritten_notes_part2_mutex_condition_vars.pdf"> chapter_5_handwritten_notes_part2_mutex_condition_vars</a></strong> Lecture notes.<br>	
 				<strong style="color: #cc0000">Test 1, 3/14/19 will cover through week 8, and projects 1 and 2.  You may bring 1 sheet of paper (8.5"x11") with notes.  You can have notes on both sides of this paper.</strong> <br>
 				
 		    </td>
@@ -120,6 +122,8 @@
 			<strong><a href="https://github.com/CNUClasses/thread_problem_atomic_solution.git"> Problems that threads can cause</a></strong> Running several threads, each reading and writing a global will cause unpredictable results. Demo using an atomic variable for a simple (but not generalizable to blocks of code>1 line) solution<br />
 			
 			<strong><a href="https://github.com/CNUClasses/12_thread_ticket_agent.git"> Thread ticket agent demo</a></strong> Sequential verses concurrent solutions plus illustration of common mistakes<br> 
+			<strong><a href="https://github.com/CNUClasses/8_Deadlock.git.git"> Deadlock example</a></strong> Rule of thumb: If you are using 2 or more synchronization objects, then you should always aquire them in the same order.  If you break this rule and some threads aquire in different order then your code is prone to deadlock.<br /> 
+			<strong><a href="https://github.com/CNUClasses/mutex_thread.git"> Mutexes to synchronize threads</a></strong> Using a mutex to synchronize critical sections (as in multiple lines of code).  <br />
 			
 				
 			
@@ -132,10 +136,10 @@
 			<td class="style_white ">
 				<strong><a href="http://www.drdobbs.com/tools/avoiding-classic-threading-problems/231000499"> Avoiding Classic Threading Problems</a></strong> ADVANCED DISCUSSION- Excellent article, dont worry about openMP and Intel Thread Checker<br>
 				
-				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chapter_5_opencv_camera_bridge_view_HARD_race_condition_find_it.pdf"> A real world example race condition and critical section that is difficult to see</a></strong>  <br>
+				
 
 
-				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chapter_5_handwritten_notes_part2_mutex_condition_vars.pdf"> chapter_5_handwritten_notes_part2_mutex_condition_vars</a></strong> Lecture notes.<br>	
+				
 				<strong><a href="https://baptiste-wicht.com/posts/2012/04/c11-concurrency-tutorial-advanced-locking-and-condition-variables.html"> Recursive Locks portion only</a></strong> This guy writes excellent C++ tutorials<br>
 				<strong><a href="http://en.cppreference.com/w/cpp/thread/condition_variable"> Condition Variables, definition and sample code article</a></strong> <br>		
 
@@ -147,8 +151,7 @@
 			choose at least ISO C++11(-std=c++0x) <br style="color: #cc0000">
 			add -pthread to the 'Other Dialect Flags' below above 'Language Standard' dropdown then in the GCC C++ Linker Libraries, add the pthread library to the libraries-l text box on the right <br><br>
 			
-			<strong><a href="https://github.com/CNUClasses/8_Deadlock.git.git"> Deadlock example</a></strong> Rule of thumb: If you are using 2 or more synchronization objects, then you should always aquire them in the same order.  If you break this rule and some threads aquire in different order then your code is prone to deadlock.<br /> 
-			<strong><a href="https://github.com/CNUClasses/mutex_thread.git"> Mutexes to synchronize threads</a></strong> Using a mutex to synchronize critical sections (as in multiple lines of code).  <br />
+			
 			<strong><a href="https://github.com/CNUClasses/mutex_lock_guard_sleep_for_yield.git">mutex_lock_guard_sleep_for_yield    </a></strong> Using a lock_guard to autounlock a mutex once the guard goes out of scope.  Also how to yield a threads timeslice or sleep the amount of time defined by std::chrono..<br />	
 			<strong><a href="https://github.com/CNUClasses/410_recursive_mutex.git">Recursive_mutex    </a></strong> A locking object that can be recursively locked (as long as you have 1 unlock() for every lock()).  This added functionality typically makes it harder to keep track of locked regions when designing your application. <br />	
 			
