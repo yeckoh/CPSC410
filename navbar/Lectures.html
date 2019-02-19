@@ -106,14 +106,14 @@
 		</tr>
 	
 		<tr>
-			<td class="style_white "><em>6,7</em></td>
+			<td class="style_white "><em>6</em></td>
 			<td class="style_white ">
 			
 				<strong>Please read Chapter 5 in your text</strong><br>
 				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chap_5_part_1.pdf"> chapter 5 part1 notes</a></strong> Multithreading intro<br>
 				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/410_chap5_race_condition_critical_section.pdf"> Chapter 5 part 2, notes- race condtion and critical section examples</a></strong>  <br>
 				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chapter_5_opencv_camera_bridge_view_HARD_race_condition_find_it.pdf"> A real world example race condition and critical section that is difficult to see</a></strong>  <br>
-				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chapter_5_handwritten_notes_part2_mutex_condition_vars.pdf"> chapter_5_handwritten_notes_part2_mutex_condition_vars</a></strong> Lecture notes.<br>	
+				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chapter_5_handwritten_notes_part2_mutex.pdf"> chapter_5_handwritten_notes_part2_mutex</a></strong> Lecture notes.<br>	
 				<strong style="color: #cc0000">Test 1, 3/14/19 will cover through week 8, and projects 1 and 2.  You may bring 1 sheet of paper (8.5"x11") with notes.  You can have notes on both sides of this paper.</strong> <br>
 				
 		    </td>
@@ -130,18 +130,18 @@
 			
 			</td>
 		</tr>
-<!--	
+	
 		<tr>
 			<td class="style_white "><em>7,8</em></td>
 			<td class="style_white ">
 				<strong><a href="http://www.drdobbs.com/tools/avoiding-classic-threading-problems/231000499"> Avoiding Classic Threading Problems</a></strong> ADVANCED DISCUSSION- Excellent article, dont worry about openMP and Intel Thread Checker<br>
-				
-				
-
-
-				
+				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chap5_readers_writers.pdf"> Using mutexes to solve readers/writers problem </a></strong>Lecture notes<br>
+								
 				<strong><a href="https://baptiste-wicht.com/posts/2012/04/c11-concurrency-tutorial-advanced-locking-and-condition-variables.html"> Recursive Locks portion only</a></strong> This guy writes excellent C++ tutorials<br>
 				<strong><a href="http://en.cppreference.com/w/cpp/thread/condition_variable"> Condition Variables, definition and sample code article</a></strong> <br>		
+				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/producer_consumer_notes.pdf"> Producer Consumer, A common programming task</a></strong> Outline, tools used (mutex and Condition variables). Flow of solution.<br>
+				
+				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chapter5_condition_vars.pdf"> chapter5_condition_vars</a></strong> Lecture notes<br>	
 
 					
 		    </td>
@@ -151,7 +151,8 @@
 			choose at least ISO C++11(-std=c++0x) <br style="color: #cc0000">
 			add -pthread to the 'Other Dialect Flags' below above 'Language Standard' dropdown then in the GCC C++ Linker Libraries, add the pthread library to the libraries-l text box on the right <br><br>
 			
-			
+			<strong><a href="https://github.com/CNUClasses/410_readers_writers_mutexes.git">Readers Writers lock, favoring readers using just mutexes</a></strong><br/> 
+
 			<strong><a href="https://github.com/CNUClasses/mutex_lock_guard_sleep_for_yield.git">mutex_lock_guard_sleep_for_yield    </a></strong> Using a lock_guard to autounlock a mutex once the guard goes out of scope.  Also how to yield a threads timeslice or sleep the amount of time defined by std::chrono..<br />	
 			<strong><a href="https://github.com/CNUClasses/410_recursive_mutex.git">Recursive_mutex    </a></strong> A locking object that can be recursively locked (as long as you have 1 unlock() for every lock()).  This added functionality typically makes it harder to keep track of locked regions when designing your application. <br />	
 			
@@ -161,7 +162,7 @@
 		<tr>
 			<td class="style_white "><em>9</em></td>
 			<td class="style_white ">
-			<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/producer_consumer_notes.pdf"> Producer Consumer, A common programming task</a></strong> Outline, tools used (mutex and Condition variables). Flow of solution.<br>
+			
 			
 			
 				
@@ -191,7 +192,7 @@
 				
 				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/410_Semaphore.pdf"> Semaphores handwritten lecture notes</a></strong><br>
 				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chap5_dining_philosophers.pdf"> Using semaphores to solve dining philosophers problem </a></strong>handwritten lecture notes<br>
-				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chap5_readers_writers.pdf"> Using semaphores to solve readers/writers problem </a></strong>handwritten lecture notes<br>
+				
 				Please read Chapter 7 in your text.<br>
 				
 		    </td>
@@ -199,7 +200,7 @@
 			
 			<strong><a href="https://github.com/CNUClasses/410_Semaphore_Dining_Philosophers.git">Dining philosophers solution using semaphores (requires below library project)</a></strong><br/> 
 			<strong><a href="https://github.com/CNUClasses/410_Semaphore_Lib.git">Semaphore class library (inherently useful stuff should be placed in a library)</a></strong><br/>
-			<strong><a href="https://github.com/CNUClasses/410_readers_writers_mutexes.git">Readers Writers lock, favoring readers using just mutexes</a></strong><br/> 
+			
 			<br />	
 			<strong><a href="https://github.com/CNUClasses/410_Semaphore_ConditionVar_Mutex_Thread_Producer_Consumer.git"> Single Producer, single consumer solution using semaphores</a></strong> Semaphore example<br />
 			<strong><a href="https://github.com/CNUClasses/410_Producer_wait_for_all_consumers_ready_using_Semaphore.git"> Forcing a thread to wait until all other threads signal that they are ready using semaphores</a></strong> Semaphores for cordination example<br />
