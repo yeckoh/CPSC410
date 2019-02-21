@@ -132,7 +132,7 @@
 		</tr>
 	
 		<tr>
-			<td class="style_white "><em>7,8</em></td>
+			<td class="style_white "><em>7</em></td>
 			<td class="style_white ">
 				<strong><a href="http://www.drdobbs.com/tools/avoiding-classic-threading-problems/231000499"> Avoiding Classic Threading Problems</a></strong> ADVANCED DISCUSSION- Excellent article, dont worry about openMP and Intel Thread Checker<br>
 				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chap5_readers_writers.pdf"> Using mutexes to solve readers/writers problem </a></strong>Lecture notes<br>
@@ -155,12 +155,15 @@
 
 			<strong><a href="https://github.com/CNUClasses/mutex_lock_guard_sleep_for_yield.git">mutex_lock_guard_sleep_for_yield    </a></strong> Using a lock_guard to autounlock a mutex once the guard goes out of scope.  Also how to yield a threads timeslice or sleep the amount of time defined by std::chrono..<br />	
 			<strong><a href="https://github.com/CNUClasses/410_recursive_mutex.git">Recursive_mutex    </a></strong> A locking object that can be recursively locked (as long as you have 1 unlock() for every lock()).  This added functionality typically makes it harder to keep track of locked regions when designing your application. <br />	
+			<strong><a href="https://github.com/CNUClasses/410_start_threads_using_condition_var.git">Making all threads start at the same time using Condition Variables</a></strong> Also demonstrates the efficiency difference between condition variables and busy waiting on a global value (spinning)<br/>
+
+			<strong><a href="https://github.com/CNUClasses/410_ConditionVar_Mutex.git">Simple signaling between threads using a mutex a condition variable and a lock guard</a></strong><br/> 
 			
 			</td>
 		</tr>
 <!--		
 		<tr>
-			<td class="style_white "><em>9</em></td>
+			<td class="style_white "><em>8</em></td>
 			<td class="style_white ">
 			
 			
@@ -170,9 +173,7 @@
 			<td class="style_white ">
 			
 
-			<strong><a href="https://github.com/CNUClasses/410_start_threads_using_condition_var.git.git">Making all threads start at the same time using Condition Variables</a></strong> Also demonstrates the efficiency difference between condition variables and busy waiting on a global value (spinning)<br/>
-
-			<strong><a href="https://github.com/CNUClasses/410_ConditionVar_Mutex.git">Simple signaling between threads using a mutex a condition variable and a lock guard</a></strong><br/> 
+			
 			<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer.git"> Simple producer consumer problem. Producer signals consumer.</a></strong>Producer produces as fast as it can and notifies consumer, consumer consumes as fast as it can. Demoes effecient 1 way thread communication. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. <br>
 			<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer_Back_And_Forth.git">Complex producer consumer problem, Producer signals consumer and vice versa</a></strong>Producer produces one then notifies consumer, consumer consumes one then notifies producer. Demoes effecient 2 way thread communications. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. <br>
 
