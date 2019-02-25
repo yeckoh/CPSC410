@@ -114,7 +114,6 @@
 				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/410_chap5_race_condition_critical_section.pdf"> Chapter 5 part 2, notes- race condtion and critical section examples</a></strong>  <br>
 				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chapter_5_opencv_camera_bridge_view_HARD_race_condition_find_it.pdf"> A real world example race condition and critical section that is difficult to see</a></strong>  <br>
 				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chapter_5_handwritten_notes_part2_mutex.pdf"> chapter_5_handwritten_notes_part2_mutex</a></strong> Lecture notes.<br>	
-				<strong style="color: #cc0000">Test 1, 3/14/19 will cover through week 8, and projects 1 and 2.  You may bring 1 sheet of paper (8.5"x11") with notes.  You can have notes on both sides of this paper.</strong> <br>
 				
 		    </td>
 			<td class="style_white ">
@@ -156,33 +155,27 @@
 			
 			<strong><a href="https://github.com/CNUClasses/mutex_lock_guard_sleep_for_yield.git">mutex_lock_guard_sleep_for_yield    </a></strong> Using a lock_guard to autounlock a mutex once the guard goes out of scope.  Also how to yield a threads timeslice or sleep the amount of time defined by std::chrono..<br />	
 			<strong><a href="https://github.com/CNUClasses/410_recursive_mutex.git">Recursive_mutex    </a></strong> A locking object that can be recursively locked (as long as you have 1 unlock() for every lock()).  This added functionality typically makes it harder to keep track of locked regions when designing your application. <br />	
-			<strong><a href="https://github.com/CNUClasses/Simple_Condition_Variable.git">Simple Condition Variables, used to order operations</a></strong><br/> 
-		
-			<strong><a href="https://github.com/CNUClasses/410_start_threads_using_condition_var.git">Making all threads start at the same time using Condition Variables</a></strong> Also demonstrates the efficiency difference between condition variables and busy waiting on a global value (spinning)<br/>
+			
 
 			<strong><a href="https://github.com/CNUClasses/410_ConditionVar_Mutex.git">Simple signaling between threads using a mutex a condition variable and a lock guard</a></strong><br/> 
 			
 			</td>
 		</tr>
-<!--		
+		
 		<tr>
 			<td class="style_white "><em>8</em></td>
 			<td class="style_white ">
+			<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chapter5_producer_many_consumers_flowchart.pdf"> producer many consumers flowchart from whiteboard</a></strong>
 			
-			
-			
-				
+			<strong style="color: #cc0000">Test 1, 3/14/19 will cover through week 8, and projects 1 and 2.  You may bring 1 sheet of paper (8.5"x11") with notes.  You can have notes on both sides of this paper.</strong> <br>
+					
 		    </td>
 			<td class="style_white ">
+			<strong><a href="https://github.com/CNUClasses/Simple_Condition_Variable.git">Simple Condition Variables, used to order operations</a></strong><br/> 
+			<strong><a href="https://github.com/CNUClasses/410_start_threads_using_condition_var.git">Making all threads start at the same time using Condition Variables</a></strong> Also demonstrates the efficiency difference between condition variables and busy waiting on a global value (spinning)<br/>
+
+			<strong><a href="https://github.com/CNUClasses/410_Producer_many_consumers.git"> Producer consumer problem using mutex and condition variables</a></strong> Multiple consumers a single producer <br />
 			
-
-			
-			<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer.git"> Simple producer consumer problem. Producer signals consumer.</a></strong>Producer produces as fast as it can and notifies consumer, consumer consumes as fast as it can. Demoes effecient 1 way thread communication. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. <br>
-			<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer_Back_And_Forth.git">Complex producer consumer problem, Producer signals consumer and vice versa</a></strong>Producer produces one then notifies consumer, consumer consumes one then notifies producer. Demoes effecient 2 way thread communications. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. <br>
-
-			<!--<strong><a href="https://github.com/CNUClasses/410_Producer_many_consumers.git"> Producer consumer problem using mutex and condition variables</a></strong> Multiple consumers a single producer <br />
-			<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chapter5_producer_many_consumers_flowchart.pdf"> producer many consumers flowchart from whiteboard</a></strong> <br>-->
-
 			
 <!--		
 			<br />	
@@ -193,14 +186,17 @@
 		<tr>
 			<td class="style_white "><em>10</em></td>
 			<td class="style_white ">
-				
 				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/410_Semaphore.pdf"> Semaphores handwritten lecture notes</a></strong><br>
+				
+				
 				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chap5_dining_philosophers.pdf"> Using semaphores to solve dining philosophers problem </a></strong>handwritten lecture notes<br>
 				
 				Please read Chapter 7 in your text.<br>
 				
 		    </td>
 			<td class="style_white ">
+			<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer.git"> Simple producer consumer problem. Producer signals consumer.</a></strong>Producer produces as fast as it can and notifies consumer, consumer consumes as fast as it can. Demoes effecient 1 way thread communication. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. <br>
+			<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer_Back_And_Forth.git">Complex producer consumer problem, Producer signals consumer and vice versa</a></strong>Producer produces one then notifies consumer, consumer consumes one then notifies producer. Demoes effecient 2 way thread communications. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. <br>
 			
 			<strong><a href="https://github.com/CNUClasses/410_Semaphore_Dining_Philosophers.git">Dining philosophers solution using semaphores (requires below library project)</a></strong><br/> 
 			<strong><a href="https://github.com/CNUClasses/410_Semaphore_Lib.git">Semaphore class library (inherently useful stuff should be placed in a library)</a></strong><br/>
