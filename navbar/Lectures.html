@@ -156,7 +156,7 @@
 				
 				<!-- Need an intro to threads, perhaps from below? -->
 				<!-- http://pages.cs.wisc.edu/~remzi/OSTEP/Educators-Slides/Andrea/ -->
-				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/threads.pdf"> Threads</a></strong><br> 
+				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/threads.pdf"> Threads an Introduction and History</a></strong><br> 
 					
 				<strong><a href="https://www.youtube.com/watch?v=_8-ht2AKyH4"> Pointers and Dynamic memory, stack verses heap Video</a></strong> Awesome video that gives a just deep enough introduction to process memory management <br>
 				<strong><a href="https://eli.thegreenplace.net/2016/c11-threads-affinity-and-hyperthreading/">(Advanced) C++11 threads, affinity and hyperthreading</a>Excellent! relates C++ threads to processor hardware</strong> <br>
@@ -167,6 +167,37 @@
 				<strong><a href="https://github.com/CNUClasses/thread_simple.git"> Single thread demo</a></strong> Use disassembly view to see that each c++ statement is equivelent to multiple assembly instructions.  An interrupt can be serviced after any assembly instruction, which may be in the middle of a C++ instruction<br />
 				</td>
 			</tr>
+
+			<tr>
+				<td class="style_white "><em>8</em></td>
+				<td class="style_white "><strong style="color: #cc0000">Test</strong><br></td>
+				
+				<td class="style_white "></td>
+				
+			</tr>
+
+			<tr>
+				<td class="style_white "><em>9</em></td>
+				<td class="style_white ">	
+						Please read Chapter 26: Concurrency: An Introduction<BR>
+							<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/Threads1.pdf"> Threads Part 1</a></strong> Further Multithreading intro<br>
+							<!-- <strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/410_chap5_race_condition_critical_section.pdf"> Chapter 5 part 2, notes- race condtion and critical section examples</a></strong>  <br>
+							<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chapter_5_opencv_camera_bridge_view_HARD_race_condition_find_it.pdf"> A real world example race condition and critical section that is difficult to see</a></strong>  <br>
+							<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chapter_5_handwritten_notes_part2_mutex.pdf"> chapter_5_handwritten_notes_part2_mutex</a></strong> Lecture notes.<br>	
+					 -->
+			</td>
+				<td class="style_white ">
+					<strong><a href="https://github.com/CNUClasses/410_stop_threads.git"> Stopping a thread Cleanly</a></strong><br> 
+					<strong><a href="https://github.com/CNUClasses/thread_problem_atomic_solution.git"> Problems that threads can cause</a></strong> Running several threads, each reading and writing a global will cause unpredictable results. Demo using an atomic variable for a simple (but not generalizable to blocks of code>1 line) solution<br />
+			
+					<strong><a href="https://github.com/CNUClasses/12_thread_ticket_agent.git"> Thread ticket agent demo</a></strong> Sequential verses concurrent solutions plus illustration of common mistakes<br> 
+					<strong><a href="https://github.com/CNUClasses/8_Deadlock.git.git"> Deadlock example</a></strong> Rule of thumb: If you are using 2 or more synchronization objects, then you should always aquire them in the same order.  If you break this rule and some threads aquire in different order then your code is prone to deadlock.<br /> 
+					<strong><a href="https://github.com/CNUClasses/mutex_thread.git"> Mutexes to synchronize threads</a></strong> Using a mutex to synchronize critical sections (as in multiple lines of code).  <br />
+				</td>
+			</tr>
+
+			
+			<!-- Please read Chapter 28: Locks<BR>	 -->
 	</tr>
 
 	</table>
