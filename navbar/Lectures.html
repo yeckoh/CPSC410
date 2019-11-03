@@ -214,10 +214,6 @@
 					<strong><a href="https://github.com/CNUClasses/spinlock.git"> A spinlock</a></strong> Do not use! Works but spikes CPU usage for all threads waiting for the lock!  <br />
 					<strong><a href="https://github.com/CNUClasses/mutex_thread.git"> Mutexes to synchronize threads</a></strong> Using a mutex to synchronize critical sections (as in multiple lines of code).  <br />
 					<strong><a href="https://github.com/CNUClasses/12_thread_ticket_agent.git"> Thread ticket agent demo</a></strong> Sequential verses concurrent solutions plus illustration of common mistakes<br> 
-					<strong style="color: #cc0000">Projects below require C++11 or later support for threads and synchronization objects. </strong><br style="color: #cc0000">For threads to work you must enable them in eclipse. Click on project name->Properties-> 
-					C/C++ Build->Settings->GCC C++ Compiler-> Dialect ->'Language Standard' dropdown 
-					choose at least ISO C++11(-std=c++0x) <br style="color: #cc0000">
-					add -pthread to the 'Other Dialect Flags' below above 'Language Standard' dropdown then in the GCC C++ Linker Libraries, add the pthread library to the libraries-l text box on the right <br><br>
 					
 					<strong><a href="https://github.com/CNUClasses/410_readers_writers_mutexes.git">Readers Writers lock, favoring readers using just mutexes</a></strong><br/> 
 					<strong><a href="https://github.com/CNUClasses/mutex_lock_guard_sleep_for_yield.git">mutex_lock_guard_sleep_for_yield    </a></strong> Using a lock_guard to autounlock a mutex once the guard goes out of scope.  Also how to yield a threads timeslice or sleep the amount of time defined by std::chrono..<br />	
@@ -225,6 +221,7 @@
 					<strong><a href="https://github.com/CNUClasses/410_ConditionVar_Mutex.git">Simple signaling between threads using a mutex a condition variable and a lock guard</a></strong><br/> 
 					</td>
 			</tr>
+			
 
 			<!-- <strong><a href="https://github.com/CNUClasses/8_Deadlock.git"> Deadlock example</a></strong> Rule of thumb: If you are using 2 or more synchronization objects, then you should always aquire them in the same order.  If you break this rule and some threads aquire in different order then your code is prone to deadlock.<br />  -->
 			<!-- what happens when notify_one called and not notify all -->
