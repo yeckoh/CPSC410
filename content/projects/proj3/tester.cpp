@@ -30,73 +30,33 @@ bool stop_working = false;
 void startThreads(string s, int numThreads, WHICH_PRINT wp, int numTimesToPrint, int millisecond_delay) {
 
 		for (int i = 0; i < numThreads; ++i) {
-			switch(wp) {
-				case P1:
-					workthreads.push_back(thread([&]() {
-						int times_thread_printed = 0;
-						while(!stop_working && times_thread_printed < numTimesToPrint) {
-							PRINT1(s);
-							++times_thread_printed;
-							this_thread::sleep_for(chrono::milliseconds(millisecond_delay));
-						}
-						if (stop_working) {
-							cout << USER_CHOSE_TO_CANCEL << endl; // not threadsafe. PRINT1(const) => compiler error
-						}
-					}));
-					break;
-				case P2:
-					workthreads.push_back(thread([&]() {
-						int times_thread_printed = 0;
-						while(!stop_working && times_thread_printed < numTimesToPrint) {
-							PRINT2(s, s);
-							++times_thread_printed;
-							this_thread::sleep_for(chrono::milliseconds(millisecond_delay));
-						}
-						if (stop_working) {
-							cout << USER_CHOSE_TO_CANCEL << endl; // not threadsafe. PRINT1(const) => compiler error
-						}
-					}));
-					break;
-				case P3:
-					workthreads.push_back(thread([&]() {
-						int times_thread_printed = 0;
-						while(!stop_working && times_thread_printed < numTimesToPrint) {
-							PRINT3(s, s, s);
-							++times_thread_printed;
-							this_thread::sleep_for(chrono::milliseconds(millisecond_delay));
-						}
-						if (stop_working) {
-							cout << USER_CHOSE_TO_CANCEL << endl; // not threadsafe. PRINT1(const) => compiler error
-						}
-					}));
-					break;
-				case P4:
-					workthreads.push_back(thread([&]() {
-						int times_thread_printed = 0;
-						while(!stop_working && times_thread_printed < numTimesToPrint) {
-							PRINT4(s, s, s, s);
-							++times_thread_printed;
-							this_thread::sleep_for(chrono::milliseconds(millisecond_delay));
-						}
-						if (stop_working) {
-							cout << USER_CHOSE_TO_CANCEL << endl; // not threadsafe. PRINT1(const) => compiler error
-						}
-					}));
-					break;
-				case P5:
-					workthreads.push_back(thread([&]() {
-						int times_thread_printed = 0;
-						while(!stop_working && times_thread_printed < numTimesToPrint) {
-							PRINT5(s, s, s, s, s);
-							++times_thread_printed;
-							this_thread::sleep_for(chrono::milliseconds(millisecond_delay));
-						}
-						if (stop_working) {
-							cout << USER_CHOSE_TO_CANCEL << endl; // not threadsafe. PRINT1(const) => compiler error
-						}
-					}));
-					break;
-			}
+			workthreads.push_back(thread([&]() {
+				int times_thread_printed = 0;
+				while(!stop_working && times_thread_printed < numTimesToPrint) {
+				switch(wp) {
+					case P1:
+						PRINT1(s);
+						break;
+					case P2:
+						PRINT2(s, s);
+						break;
+					case P3:
+						PRINT3(s, s, s);
+						break;
+					case P4:
+						PRINT4(s, s, s, s);
+						break;
+					case P5:
+						PRINT5(s, s, s, s, s);
+						break;
+				}
+				++times_thread_printed;
+				this_thread::sleep_for(chrono::milliseconds(millisecond_delay));
+				}
+				if (stop_working) {
+					cout << USER_CHOSE_TO_CANCEL << endl; // not threadsafe. PRINT1(const) => compiler error
+				}
+			}));
 		}
 
 }
