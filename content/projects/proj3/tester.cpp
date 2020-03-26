@@ -28,10 +28,9 @@ bool stop_working = false;
  * millisecond_delay- how long (in milliseconds) to wait between prints
  */
 void startThreads(string s, int numThreads, WHICH_PRINT wp, int numTimesToPrint, int millisecond_delay) {
-
-		for (int i = 0; i < numThreads; ++i) {
-			workthreads.push_back(thread([&]() {
-				int times_thread_printed = 0;
+		for (int i = 0; i < numThreads; ++i)
+			workthreads.push_back(thread([=] () mutable {
+			int times_thread_printed = 0;
 				while(!stop_working && times_thread_printed < numTimesToPrint) {
 				switch(wp) {
 					case P1:
@@ -53,12 +52,9 @@ void startThreads(string s, int numThreads, WHICH_PRINT wp, int numTimesToPrint,
 				++times_thread_printed;
 				this_thread::sleep_for(chrono::milliseconds(millisecond_delay));
 				}
-				if (stop_working) {
+				if (stop_working)
 					cout << USER_CHOSE_TO_CANCEL << endl; // not threadsafe. PRINT1(const) => compiler error
-				}
-			}));
-		}
-
+		}));
 }
 
 /*

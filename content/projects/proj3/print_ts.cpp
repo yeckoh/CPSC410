@@ -15,31 +15,26 @@ using namespace std;
 mutex m;
 
 void PRINT1(string &t1) {
-	m.lock();
+	lock_guard<mutex> scope_lock(m);
 	cout << t1 << endl;
-	m.unlock();
 }
 
 void PRINT2(string &t1, string &t2) {
-	m.lock();
+	lock_guard<mutex> scope_lock(m);
 	cout << t1 << t2 << endl;
-	m.unlock();
 }
 
 void PRINT3(string &t1, string &t2, string &t3) {
-	m.lock();
+	lock_guard<mutex> scope_lock(m);
 	cout << t1 << t2 << t3 << endl;
-	m.unlock();
 }
 
 void PRINT4(string &t1, string &t2, string &t3, string &t4) {
-	m.lock();
+	lock_guard<mutex> scope_lock(m);
 	cout << t1 << t2 << t3 << t4 << endl;
-	m.unlock();
 }
 
 void PRINT5(string &t1, string &t2, string &t3, string &t4, string &t5) {
-	m.lock();
+	lock_guard<mutex> scope_lock(m);
 	cout << t1 << t2 << t3 << t4 << t5 << endl;
-	m.unlock();
 }

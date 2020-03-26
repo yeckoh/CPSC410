@@ -19,10 +19,10 @@ int main() {
 	string str2 = "XYZ";
 	string str3 = "ABC";
 
-	startThreads(str1, 16, P3, 3, 100);
-	startThreads(str2, 8, P1, 2, 200);
-	startThreads(str3, 4, P2, 1, 300);
-	this_thread::sleep_for(chrono::milliseconds(500));
+	startThreads(str1, 7, P3, 4, 100);
+	startThreads(str2, 7, P1, 4, 200);
+	startThreads(str3, 7, P2, 4, 300);
+	this_thread::sleep_for(chrono::milliseconds(700));
 	setCancelThreads(true);
 	joinThreads();
 
